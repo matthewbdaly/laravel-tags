@@ -24,7 +24,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Matthewbdaly\\LaravelPackageBoilerplate\\": "src/"
+            "Matthewbdaly\\LaravelTags\\": "src/"
         }
     },
     "autoload-dev": {
