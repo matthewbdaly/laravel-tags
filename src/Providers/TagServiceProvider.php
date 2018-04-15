@@ -1,13 +1,13 @@
 <?php
 
-namespace Matthewbdaly\LaravelPackageBoilerplate\Providers;
+namespace Matthewbdaly\LaravelTags\Providers;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 /**
  * Service provider
  */
-class ServiceProvider extends BaseServiceProvider
+class TagServiceProvider extends BaseServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -17,11 +17,6 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->loadRoutesFrom(__DIR__.'/../../routes.php');
-        $this->loadViewsFrom(__DIR__.'/../views', 'packagename');
-        $this->publishes([
-            __DIR__.'/../views', resource_path('views/vendor/packagename')
-        ]);
     }
 
     /**

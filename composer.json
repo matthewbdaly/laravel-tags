@@ -52,7 +52,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Matthewbdaly\\LaravelPackageBoilerplate\\Providers\\ServiceProvider"
+                "Matthewbdaly\\LaravelTags\\Providers\\TagServiceProvider"
             ]
         }
     }

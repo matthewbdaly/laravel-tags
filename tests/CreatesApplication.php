@@ -8,14 +8,7 @@ trait CreatesApplication
 {
 	protected function getPackageProviders($app)
 	{
-		return ['Matthewbdaly\LaravelPackageBoilerplate\ServiceProvider'];
-	}
-
-	protected function getPackageAliases($app)
-	{
-		return [
-			'Facade' => 'Matthewbdaly\LaravelPackageBoilerplate\Facade'
-		];
+		return ['Matthewbdaly\LaravelTags\Providers\TagServiceProvider'];
 	}
 
     /**
