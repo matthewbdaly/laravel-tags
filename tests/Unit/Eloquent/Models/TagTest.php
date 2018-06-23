@@ -9,6 +9,8 @@ use Matthewbdaly\LaravelTags\Eloquent\Models\Tag;
 
 class TagTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * Test creating a tag
      *
