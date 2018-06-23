@@ -26,5 +26,6 @@ $factory->define(Tests\Fixtures\User::class, function (Faker $faker) {
 
 $factory->define(Matthewbdaly\LaravelTags\Eloquent\Models\Tag::class, function (Faker $faker) {
     return [
+        'name' => $faker->word,
     ];
 });
