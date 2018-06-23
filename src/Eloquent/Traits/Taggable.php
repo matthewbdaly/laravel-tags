@@ -9,9 +9,8 @@ trait Taggable
      *
      * @return Illuminate\Database\Eloquent\Relations\MorphMany
      */
-    public function comments()
+    public function tags()
     {
         return $this->morphMany('Matthewbdaly\LaravelTags\Eloquent\Models\Tag', 'taggable');
     }
-
 }
