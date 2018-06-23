@@ -11,6 +11,6 @@ trait Taggable
      */
     public function tags()
     {
-        return $this->morphMany('Matthewbdaly\LaravelTags\Eloquent\Models\Tag', 'taggable');
+        return $this->morphToMany('Matthewbdaly\LaravelTags\Eloquent\Models\Tag', 'taggable');
     }
 }
